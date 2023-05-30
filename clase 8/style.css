@@ -30,7 +30,7 @@
 .titulo{
     background-color: var(--yellow);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between
 
 }
 .titulo ul{
@@ -43,16 +43,7 @@
 .logo{
     width: 13px;
 }
-#front{
-    color: var(--brown);
-    position: relative;
-    right:840px;
-}
-#cat{
-    color: white;
-    position: relative;
-    right: 840px;
-}
+
 .plato-comida{
     width: 100%;
 }
@@ -132,6 +123,7 @@ form input{
 }
 .suscribirse{
     display: flex;
+    justify-content: space-between;
     background-color: var(--yellow);
 }
 .informacion{
