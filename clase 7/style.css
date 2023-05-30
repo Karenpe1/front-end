@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+/*root es para crear variables globales*/
+
+:root {
+    /*colores*/
+    --background: #e6e6e6;
+    --gray: #c4c4c4;
+    --blue: #005677;
+}
+
+/* Reiniciar los estilos que el navegador trae por defecto */
+body {
+    margin: 0;
+}
+ header {
+    height: 300px;
+    background-size: cover;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-simple-e-commerce-character-jobs-picture-image_936031.jpg)
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+
+}
+
+header img{
+    width: 100px;
+    margin: 10px auto;
+    display: block;
+    padding-top: 10px;
+}
+
+
+div h1{
+    color: var(--blue);
+    background-color: var(--gray);
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+}
+
+/* Blank Senction */
+
+.blank-section{
+    min-height: 100px;
+}
+/*Datos personales*/
+
+.cv-datos span{
+    font-weight: bold;
+}
+
+.cv-datos ul{
+    list-style-type:none;
+    margin-left: 10px;
+}
+
+
+/*Experiencia academica*/
+.formacion-academica .año{
+    font-weight: bold;
+}
+.formacion-academica{
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+
+/* Experiencia Laboral */
+
+main h3 {
+    background-color: var(--gray);
+    color: var(--blue);
+    text-transform: uppercase;
+    padding: 0.25em 0.5rem;
+    letter-spacing: 0.25em;
+}
+
+
+.cv-section {
+    min-height: 100px;
+}
+
+.two-columns {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+}
+
+/* TERMINA Experiencia Laboral */
+
+/* comienza footer */
+footer{
+    background-color:var(--blue) ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 36px;
+    margin-top: 100px;
+}
+footer img{
+    width: 20px;
+    height: 20px;
+}
