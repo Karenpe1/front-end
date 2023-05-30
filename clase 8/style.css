@@ -1,0 +1,175 @@
+/*reiniciar los estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+ /*colores*/
+*:root{
+    --yellow:#F0A83E;
+    --brown: #3C2313;
+    --black: #222222;
+    --gray: #FBFAF6;
+}
+
+.ofertas{
+    background-color: var(--black);
+    color: white;
+    display: flex;
+}
+
+.ofertas ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    position: relative;
+    left:900px;
+}
+
+.titulo{
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: flex-end;
+
+}
+.titulo ul{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    gap: 10px;
+   
+}
+.logo{
+    width: 13px;
+}
+#front{
+    color: var(--brown);
+    position: relative;
+    right:840px;
+}
+#cat{
+    color: white;
+    position: relative;
+    right: 840px;
+}
+.plato-comida{
+    width: 100%;
+}
+.publicidad div span{
+    font-size: 30px;
+    background-color: white;
+    position: relative;
+    left: 900px;
+    bottom: 300px;
+}
+#descuentos{
+    background-color: none;
+    color: black;
+    position: relative;
+    left: 550px;
+    bottom: 270px;
+
+}
+.publicidad button{
+    border-color: var(--yellow);
+    border-radius: 3px;
+    color: white;
+    background-color: var(--yellow);
+    position: relative;
+    left: 350px;
+    bottom: 240px;
+}
+
+.productos-destacados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.productos-destacados img{
+    width: 60px;
+    position: relative;
+    left: 570px;
+}
+.productos-destacados h2{
+    font-size: 40px;
+
+}
+.container{
+    display: flex;
+    gap: 2px;
+    justify-content: space-around;
+}
+.card{
+    width: 265px;
+    height: 312px;
+    border-radius: 10px;
+    background-color: var(--gray);
+}
+.contactenos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: var(--brown);
+    font-size: 20px;
+
+}
+.insertar{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    background-color: var(--brown);
+    color: black;
+}
+#resetear{
+    background-color: var(--gray);
+    border-color: var(--gray);
+}
+#enviar{
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+.suscribirse{
+    display: flex;
+    background-color: var(--yellow);
+}
+.informacion{
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.localidad{
+    display: flex;
+    align-items: center;
+}
+.telefono{
+    display: flex;
+    align-items: center;
+
+}
+.contacto{
+    display: flex;
+    align-items: center;
+
+}
+.bx-border-circle{
+    background-color: var(--gray);
+}
+.texto{
+    color: white;
+}
+.derechos{
+    color: white;
+    background-color: var(--black);
+    font-size: 10px;
+    text-align: center;
+
+}
+
+
+
+
+
+
