@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 
 }
 /*root es para crear variables globales*/
@@ -56,6 +57,7 @@ div h1{
 
 .cv-datos span{
     font-weight: bold;
+    text-decoration: none;
 }
 
 .cv-datos ul{
