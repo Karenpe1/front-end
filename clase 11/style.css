@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+header span{
+    flex-flow: row;
+    align-items: start;
+    font-size: 30px;
+}
+#primer{
+    color:green;
+}
+#tercero{
+    color: red;
+}
+.navegacion_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+}
+.navegacion{
+    align-items: center;
+}
+.container{
+    display: flex;
+    background-color: #E5E5E5;
+    padding: 10px;
+    justify-content: center;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.container h3{
+    color: red;
+    position: absolute;
+    top: 30px;
+    font-size: 24px;
+    left: 170px;
+}
+.card{
+    width: 490px;
+    background-color: white;
+    padding: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card h2{
+    color: red;
+    font-size: 24px;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: black;
+}
+footer nav{
+    color: white;
+    font-size: 16px;
+}
+#segundo{
+    color: white;
+}
+footer div span{
+    font-size: 20px;
+}
