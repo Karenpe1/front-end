@@ -28,6 +28,7 @@
 }
 
 .titulo{
+    padding: 15px 0;
     background-color: var(--yellow);
     display: flex;
     justify-content: space-between
@@ -73,6 +74,7 @@
 }
 
 .productos-destacados{
+    margin-bottom: 55px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -87,6 +89,7 @@
 
 }
 .container{
+    margin-bottom: 50px;
     display: flex;
     gap: 2px;
     justify-content: space-around;
@@ -105,13 +108,22 @@
     font-size: 20px;
 
 }
+.buttoms{
+    display: flex;
+    gap: 40px;
+    width: 3em;
+}
 .insertar{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 form input{
     background-color: var(--brown);
     color: black;
+    border-radius: 5px;
+    height: 3em;
+    width: 20em;
 }
 #resetear{
     background-color: var(--gray);
@@ -159,6 +171,8 @@ form input{
     text-align: center;
 
 }
+
+
 
 
 

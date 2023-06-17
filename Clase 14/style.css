@@ -1,0 +1,306 @@
+/*reiniciar los estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+ /*colores*/
+*:root{
+    --yellow:#F0A83E;
+    --brown: #3C2313;
+    --black: #222222;
+    --gray: #FBFAF6;
+}
+.container_header{
+    display: flex;
+}
+
+.ofertas{
+   display: none;
+}
+
+.titulo{
+    padding: 15px 0;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-between
+
+}
+.titulo ul{
+    display: none; 
+}
+
+#menu{
+    display: none;
+}
+.plato-comida{
+    width: 100%;
+}
+.texto{
+    display: none;
+}
+
+#texto_publicidad{
+    font-size: 26px;
+    position: absolute;
+    left: 15px;
+    top: 70px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
+    text-align:center;
+
+}
+#descuentos{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 120px;
+}
+ #buttom__comedor{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 150px;
+    padding: 10px;
+    border-color: var(--yellow);
+    background-color: var(--yellow);
+ }
+
+.productos-destacados{
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.productos-destacados img{
+    width: 60px;
+    position: relative;
+    left: 210px;
+}
+.productos-destacados h2{
+    font-size: 40px;
+
+}
+.container{
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2px;
+    justify-content: space-around;
+}
+.card{
+    width: 265px;
+    height: 312px;
+    border-radius: 10px;
+    background-color: var(--gray);
+}
+.contactenos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: var(--brown);
+    font-size: 20px;
+}
+
+.insertar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input{
+    background-color: var(--brown);
+    color: white;
+    border-radius: 15px;
+    height: 3em;
+    width: 27em;
+}
+.buttoms{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    margin: 3em 0em;
+}
+#resetear{
+    background-color: var(--gray);
+    border-color: var(--gray);
+    width: 10em;
+    height: 2em;
+    border-radius: 2em;
+    font-size: 1.5em;
+
+}
+#enviar{
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+    width: 10em;
+    height: 2em;
+    border-radius: 2em;
+    font-size: 1.5em;
+}
+.suscribirse{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--yellow);
+}
+.suscribirse button{
+    width: 7em;
+    height: 3em;
+    border-radius: 15px;
+    background-color: var(--brown);
+    color: white;
+
+
+}
+#correo{
+    width: 27em;
+    height: 3em;
+    border-radius: 5px;
+
+}
+.formulario_suscribirse{
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacion{
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0px;
+}
+.localidad{
+    display: flex;
+    align-items: center;
+}
+.telefono{
+    display: flex;
+    align-items: center;
+
+}
+.contacto{
+    display: flex;
+    align-items: center;
+
+}
+.bx-border-circle{
+    background-color: var(--gray);
+}
+.texto{
+    color: white;
+}
+.derechos{
+    color: white;
+    background-color: var(--black);
+    font-size: 15px;
+    text-align: center;
+
+}
+@media(min-width:900px){
+    .hamburguesa{
+        display: none;
+    }
+    .ofertas{
+        background-color: var(--black);
+        color: white;
+        display: flex;
+    }
+    
+    .ofertas ul{
+        display: flex;
+        list-style-type: none;
+        gap: 10px;
+        position: relative;
+        left:900px;
+    }
+    
+    .titulo{
+        padding: 15px 0;
+        background-color: var(--yellow);
+        display: flex;
+        justify-content: space-between
+    
+    }
+    .titulo ul{
+        list-style-type: none;
+        color: white;
+        display: flex;
+        gap: 10px;
+       
+    }
+    .logo{
+        width: 13px;
+    }
+    .plato-comida{
+        width: 100%;
+    }
+    .texto2{
+        display: none;
+    }
+
+    .texto{
+        display: flex;
+        width: 400px;
+        flex-wrap: wrap;
+        gap: 10px;
+        position: relative;
+        right: 20px;
+     
+    }
+    #texto_publicidad2{
+        color: black;
+    }
+    #descuentos2{
+        color: black;
+        background-color:none;
+
+    }
+    #buttom__comedor2{
+       padding: 10px;
+       color: black;
+    }
+
+    .publicidad div span{
+        font-size: 30px;
+        background-color: white;
+        position: relative;
+        left: 900px;
+        bottom: 300px;
+    }
+    #descuentos{
+        background-color: none;
+        color: black;
+        position: relative;
+        left: 550px;
+        bottom: 270px;
+    
+    }
+    .publicidad button{
+        border-color: var(--yellow);
+        border-radius: 3px;
+        color: white;
+        background-color: var(--yellow);
+        position: relative;
+        left: 350px;
+        bottom: 240px;
+    }
+    .informacion{
+        background-color: var(--brown);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+    }
+}
+
+
+
+
+
+
+

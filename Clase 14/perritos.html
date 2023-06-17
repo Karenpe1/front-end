@@ -13,7 +13,7 @@
       rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="container__header" >
       <div class="ofertas">
         <p>Grandes ofertas en comederos</p>
         <ul >
@@ -33,17 +33,28 @@
             </ul>
           </nav>
         </div>
+        <div class="hamburguesa" >
+          <label for="menu"><i class='bx bx-menu'></i></label>
+          <input type="radio" name="menu" id="menu">
+        </div>
       </div>
     </header>
-    <section class="publicidad">
-      <div>
+    <section>
+      <div class="publicidad">
       <img class="plato-comida"
         src="img/bowl-and-pet-daities-on-green-background_1.jpg"
         alt="imagen de plato de comida de perro"
-      />
-        <span>!Es un placer tenerte aquí!</span>
-        <span id="descuentos">comedores en descuento</span>
-        <button>comedores</button>
+        />
+        <div  class="texto2">
+          <span id="texto_publicidad">!Es un placer tenerte aquí!</span>
+          <span id="descuentos">comedores en descuento</span>
+          <button id="buttom__comedor">comedores</button>
+        </div>
+        <div class="texto">
+          <span id="texto_publicidad2">!Es un placer tenerte aquí!</span>
+          <span id="descuentos2">comedores en descuento</span>
+          <button id="buttom__comedor2">comedores</button>
+        </div>
       </div>
     </section>
     <section>
@@ -79,16 +90,16 @@
             <input  type="text" placeholder="ingresa tu correo electrinico">
             <input  type="text" placeholder="telefono">
         </form>
-        <div class="buttoms">          
-          <button id="resetear">Resetear</button>
-          <button id="enviar"> Enviar </button>
-        </div>
     </section>
+    <div class="buttoms">          
+      <button id="resetear">Resetear</button>
+      <button id="enviar"> Enviar </button>
+    </div>
     <footer>
         <div class="suscribirse">
             <h3> suscribete para mas novedades</h3>
-            <div>
-              <input type="text" placeholder="ingresa tu correo electronico">
+            <div class="formulario_susribirse">
+              <input id="correo" type="text" placeholder="ingresa tu correo electronico">
               <button>suscribirme</button>
             </div>
         </div>
