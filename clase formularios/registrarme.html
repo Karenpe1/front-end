@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="descuentos">
+            <p>descuentos 20%</p>
+        </div>
+        <div class="hero">
+            <img src="images/OBJECTS.png" alt="">
+            <h1>Nombre Tienda</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">contacto</a></li>
+                <li><a href="#"></a> registrarme</li>
+                <li><a href="#"></a> ingresar</li>
+            </ul>
+        </div>
+    </header>
+    <section >
+        <div class="formulario">
+            <h3> Añadir tu super! </h3>
+            <h4>Agrega tu personaje favorito completando las opciones</h4>
+            <div class="dividir_formulario">
+                <div class="inputs_formulario" id="primero">
+                    <form class="nombres" action="/registro" method="post">
+                        <label class="labels" for="nombre">*Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                        <label class="labels" for="fecha">Feha</label>
+                        <input type="date" name="fecha" id="fecha">
+                        <textarea name="comentario" id="comentario " cols="30" rows="10"> descripcion</textarea>
+                    </form>
+
+                </div>
+                <div class="inputs_formulario">
+                    <form action="/registro" method="post">  
+                        <label class="labels"  for="Especie">*Especie</label>
+                        <select class="especie" name="Especie" id="Especie">
+                            <option value="animal">animal</option>
+                            <option value="desconocido">desconocida</option>
+                            <option value="humana">humano</option>
+                        </select>
+                        <label class="labels" for="foto">Agregar foto</label>
+                        <input class="especie" type="file" name="foto imagen" id="foto imagen" accept=".jpg .jpeg .png">
+                        <span class="poderes">Poderes</span>
+                        <label class="labels" for="poderes">
+                            <input type="checkbox" name="poderes" id="poderes">Volar
+                        </label>
+                        <label class="labels" for="foto">    
+                            <input type="checkbox" name="poderes" id="poderes">SuperInteligencia
+                        </label>
+                        <label class="labels" for="foto">    
+                            <input type="checkbox" name="poderes" id="poderes">Vista de rayo láser
+                        </label>
+                        <label class="labels" for="foto">    
+                            <input type="checkbox" name="poderes" id="poderes">Billetera gorda
+                        </label>
+                        <h3 class="poderes">________________________</h3>
+                        <span class="personaje">Tipo de personaje</span>
+                        <label  for="tipo">
+                            <div class="personaje">
+                                <input type="radio" name="tipo" id="tipo" value="Héroe / Heroina"> 
+                                <span> Héroe / Heroina</span> 
+                            </div>
+                            <div class="personaje">    
+                                <input type="radio" name="tipo" id="tipo" value="Villano / Villana"> 
+                                <span>Villano / Villana</span>
+                            </div>
+                        </label>
+                    </form> 
+                </div>
+            </div>
+            <input class="bottom_enviar" type="submit" > 
+        </div>
+    
+    </section>
+    <footer >
+        <p class="marca">Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
