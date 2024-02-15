@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* 
+    ¿Qué es Sass vs CSS?
+    👉 CSS nos permite aplicar estilo al HTML
+    👉 SASS es un lenguaje que se convierte (compila) en CSS
+    👉 SCSS es un lenguaje que se convierte (compila) en CSS
+
+    Por lo tanto ¿Qué se entiende cuando decimos Sass?
+    👉 SASS es un lenguaje que se convierte (compila) en CSS
+
+    ¿Cómo se usa Sass?
+    Creas un archivo de SASS y lo conviertes (compilas) con herramientas.
+
+    ¿Cómo se puede compilar Sass?
+    Puedes hacerlo de múltiples formas:
+
+    👉 Herramientas como Prepros 🚨MUY FÁCIL 👉 https://youtu.be/tArtLYlq9ws
+    👉 Consola con NodeJS
+    👉 Sistemas de Bundling como Webpack
+    👉 Sistemas de Task Runner como Grunt
+
+    ¿Cómo escribir variables en SASS?
+    Recuerda:
+        👉 Declaramos(creamos) la variable
+        👉 Usamos la variable
+        🚨 Puedes ponerle el nombre que quieras pero usa "snake-case"
+        🚨 Si no sabes de nomenclaturas 👉 https://youtu.be/lhEJkeCJ3As
+*/
+a {
+  color: black;
+}
+
+p {
+  background-color: black;
+}
+
+/* ¿Qué pasa si tengo muchas variables? */
+/* 👆 Aquí tenemos muchas variables y tenemos que repetir "color-", "fuente-" */
+header {
+  color: black;
+  font-family: Verdana;
+}
+
+h1 {
+  background: white;
+  font-family: Helvetica;
+}
+
+/* 
+    Vamos a ser organizados y guardar todas las variables en una lista de variables.
+    👉 Una lista de variables es un Array.
+    👉 Usaremos map-get() para usar las variables 
+*/
+header {
+  color: black;
+  font-family: Verdana;
+}
+
+h1 {
+  background: white;
+  font-family: Helvetica;
+}
+
+/* 
+    ¿Qué es un mixin en CSS?
+    👉 No existen mixins en CSS, pero si en SASS    
+
+    ¿Qué es un mixin en SASS/SCSS?
+    Es una función que nos permite ahorrar líneas de código y pueden usar:
+    👉 Argumentos (son como las variables)
+    👉 @content
+
+    ¿Cómo empezar a trabajar con SASS?
+    👉 https://youtu.be/tArtLYlq9ws
+
+    ¿SASS y SCSS es lo mismo?
+    Si, la diferencia es que en SASS no se usan ni ";" ni "{}"
+
+    ¿Qué es el código Scss?
+    Es SASS pero con la diferencia es que en SASS no se usan ni ";" ni "{}"
+
+    Podemos definir varios tipos:
+    👉 Mixin sin Argumentos
+    👉 Mixin con Argumentos
+        👉 Sólo 1 argumento
+        👉 Más de 1 argumento
+        👉 Argumento con valor por defecto
+    👉 Mixin con la Regla @content
+    👉 Mixin para Flex
+    👉 Mixin para Grid
+    👉 Mixin para Responsive Design
+    👉 Cómo crear tu propio Mixin
+
+    ¿Cómo hacer funciones en SASS? 
+    Pues vamos a verlo 😊
+
+*/
+/*
+    Mixin sin Argumentos. Recuerda:
+    👉 Creamos con @mixin
+    👉 Usamos con @include
+    🚨 Si no hay argumentos podemos no poner los "()"
+*/
+header {
+  background: black;
+}
+
+header {
+  background: black;
+}
+
+/*
+    Mixin con Argumentos.
+    👉 Siempre con los "()"
+    👉 Recuerda que los argumentos son como las "variables"
+*/
+/* Mixin con Sólo 1 argumento */
+p {
+  color: black;
+}
+
+/* Mixin con Más de 1 argumento */
+p {
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* Mixin con Sólo 1 argumento */
+p {
+  color: red;
+  color: black;
+}
+
+/* 
+    Mixin con la Regla @content
+    👉 Nos permite introducir múltiples propiedades CSS dentro de un mixin
+    👉 Muy usado para Responsive Design
+*/
+p {
+  font-size: 4em;
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 2em;
+  }
+}
+
+/* Mixin para Flex */
+/* 
+    Cuando no tenemos un mixin tenemos que:
+    👉 Repetir varias veces las mismas propiedades
+    👉 Nos olvidamos de ponerlas en orden
+    👉 Escribimos varias líneas por etiqueta
+    👉 Más probabilidad de equivocarte al escribir
+*/
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Si usamos un mixin */
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Mixin para Grid */
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+/* Y con Mixin */
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+@media screen and (max-width: 480px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 0em;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+@media screen and (max-width: 480px) {
+  section {
+    grid-template-columns: 1fr;
+    gap: 0em;
+  }
+}
+
+/* Mixin para Responsive Design */
+article {
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  article {
+    width: 100%;
+  }
+}
+/* Así se hace con Mixins */
+article {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  article {
+    width: 100%;
+  }
+}
+
+/* 
+    Cómo crear tu propio Mixin: Ejemplo con Neomorfismo
+    👉 Detecta cuando siempre usas las mismas propiedades
+    👉 Adápta tu mixin a tu forma de maquetar
+*/
+/* Neomorfismo sin mixins */
+article {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 21px 21px 42px #bebebe, -21px -21px 42px #ffffff;
+}
+
+section {
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+
+/* Así quedaría con Mixins */
+article {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 21px 21px 42px #bebebe, -21px -21px 42px #ffffff;
+}
+
+section {
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+
+/* Anidación (Nesting) - ¿Cómo anidar en Scss? */
+/* Ejemplo sin Anidación */
+header {
+  color: black;
+}
+
+header h1 {
+  color: red;
+}
+
+/* Ejemplo con anidación */
+header {
+  color: black;
+}
+header h1 {
+  color: red;
+}
+header h3 {
+  background-color: pink;
+}
+
+/*
+    ¿Qué significa & en SCSS?
+    👉 Añade el selector "padre" cuando anidamos
+*/
+/* Ejemplo sin Selector & ni Anidación */
+a {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: aqua;
+}
+
+a:visited {
+  color: pink;
+}
+
+/* Ejemplo con Selector & y Anidación */
+a {
+  color: black;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: aqua;
+}
+a:visited {
+  color: pink;
+}
+
+/* 
+    ¿Qué nombre pongo en una clase CSS?
+    👉 En principio puedes poner cualquier nombre peeeero mejor si seguimos unas reglas o una metodología
+
+    ¿Qué metodologia CSS usar?
+    👉 Existen muchas: BEM CSS, SUIT CSS, CUBE CSS
+
+    ¿Qué significa BEM CSS?
+    👉 Es una metodología que define un bloque, elemento y modificador
+
+    ¿Qué es BEM en Sass?
+    👉 Pues adaptamos los selectores de BEM gracias a la anidación y el selector &
+*/
+/* Ejemplo de BEM sin Anidar */
+.header {
+  color: black;
+}
+
+.header__h1 {
+  color: pink;
+}
+
+.header__nav {
+  color: red;
+}
+
+/* Ejemplo de BEM con Anidación */
+.header {
+  color: black;
+}
+.header .header__h1 {
+  color: pink;
+}
+.header .header__nav {
+  color: red;
+}
+
+/* Ejemplo de BEM con Anidación y Selector & */
+.header {
+  color: black;
+}
+.header__h1 {
+  color: pink;
+}
+.header__nav {
+  color: red;
+}
+
+/*
+    ¡¡Dame un truco!!
+    👉 Descarga BEM Helper para VSCode
+*/
+/* Anidación (Nesting) - ¿Cómo anidar en Scss? */
+/* Ejemplo sin Anidación */
+header {
+  color: black;
+}
+
+header h1 {
+  color: red;
+}
+
+header nav {
+  color: blue;
+}
+
+/* Ejemplo con anidación */
+header {
+  color: black;
+}
+header h1 {
+  color: red;
+}
+header nav {
+  color: blue;
+}
+
+/*
+    ¿Qué significa & en SCSS?
+    👉 Añade el selector "padre" cuando anidamos
+*/
+/* Ejemplo sin Selector & ni Anidación */
+a {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: aqua;
+}
+
+a:visited {
+  color: pink;
+}
+
+/* Ejemplo con Selector & y Anidación */
+a {
+  color: black;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: aqua;
+}
+a:visited {
+  color: pink;
+}
+
+/* 
+    ¿Qué nombre pongo en una clase CSS?
+    👉 En principio puedes poner cualquier nombre peeeero mejor si seguimos unas reglas o una metodología
+
+    ¿Qué metodologia CSS usar?
+    👉 Existen muchas: BEM CSS, SUIT CSS, CUBE CSS
+
+    ¿Qué significa BEM CSS?
+    👉 Es una metodología que define un bloque, elemento y modificador
+
+    ¿Qué es BEM en Sass?
+    👉 Pues adaptamos los selectores de BEM gracias a la anidación y el selector &
+
+    ¡¡Dame un truco para usar BEM en SASS!!
+    👉 Descarga BEM Helper para VSCode
+
+*/
+/* Ejemplo de BEM sin Anidar */
+.header {
+  color: black;
+}
+
+.header__h1 {
+  color: pink;
+}
+
+.header__nav {
+  color: red;
+}
+
+/* Ejemplo de BEM con Anidación y Selector & */
+.footer {
+  color: black;
+}
+.footer__h1 {
+  color: pink;
+}
+.footer__nav {
+  color: red;
+}/*# sourceMappingURL=app.css.map */

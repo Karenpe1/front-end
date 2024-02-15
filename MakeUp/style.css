@@ -1,0 +1,157 @@
+* {
+  font-family: Lorena, regular;
+}
+
+.navbar {
+  background-color: #ecdcbf;
+}
+
+var {
+  color: #ffe89b;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecdcbf;
+  padding: 3em 0em 5em 0em;
+  gap: 1em;
+}
+@media (max-width: 800px) {
+  .servicios {
+    flex-flow: column;
+    gap: 6em;
+  }
+}
+.servicios .card1 {
+  width: 60vh;
+  height: 65vh;
+  position: relative;
+  border-radius: 20em;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+}
+.servicios .card1 img {
+  width: 100%;
+  height: 100%;
+}
+.servicios .card1 p {
+  position: absolute;
+  bottom: 0.8vh;
+  color: rgb(209, 101, 101);
+  padding-left: 1em;
+  font-size: 1.5em;
+}
+.servicios .card1 a {
+  background-color: #e8cb9a;
+  width: 100%;
+}
+
+.principal {
+  background-color: #ecdcbf;
+  padding-bottom: 3em;
+}
+.principal .descBlog {
+  padding-bottom: 2em;
+  margin: 0em 18em;
+}
+@media (max-width: 830px) {
+  .principal .descBlog {
+    margin: 0em 2em;
+  }
+}
+.principal .cardBlog {
+  background-color: rgba(254, 236, 201, 0.937254902);
+  margin: 0em 6em;
+  max-height: 100%;
+  border-radius: none;
+}
+.principal .cardBlog .anuncio {
+  padding: 3em;
+}
+.principal .cardBlog .anuncio p {
+  font-size: 3em;
+}
+@media (max-width: 992px) {
+  .principal .cardBlog .anuncio p {
+    font-size: 2em;
+  }
+}
+.principal .cardBlog a {
+  background-color: #e8cb9a;
+  color: black;
+}
+.principal .cardBlog .blog {
+  font-family: Lorena, regular;
+  color: #cd9369;
+}
+.principal .secundario {
+  max-height: 100%;
+}
+.principal .secundario img {
+  height: 100%;
+  width: 100%;
+}
+
+.precios {
+  background-color: #ecdcbf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3em;
+}
+.precios h2 {
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 0.7em;
+  color: #c18964;
+}
+.precios .grande {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+@media (max-width: 992px) {
+  .precios .grande {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+.precios .grande .paquetes {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+  padding: 1em 1em;
+}
+.precios .grande .paquetes p {
+  color: #c18964;
+  font-size: 1.3em;
+}
+.precios .grande .paquetes p span {
+  font-size: 0.7em;
+}
+.precios a {
+  background-color: #e8cb9a;
+  width: 10%;
+}
+
+footer {
+  background-color: rgba(236, 220, 191, 0.6235294118);
+}
+footer .footer1 {
+  background-color: rgba(171, 131, 113, 0.5803921569);
+  display: flex;
+  flex-direction: wrap nowrap;
+  justify-content: space-around;
+}
+footer .footer2 img {
+  height: 100%;
+}
+footer .footer3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
